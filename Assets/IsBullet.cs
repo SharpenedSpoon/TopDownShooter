@@ -24,4 +24,11 @@ public class IsBullet : MonoBehaviour {
 			Destroy(gameObject);
 		}
 	}
+
+	void OnCollisionEnter(Collision collision) {
+		HasHealth otherHealth = collision.gameObject.GetComponent<HasHealth>();
+		if (otherHealth != null) {
+			otherHealth.TakeDamage(1);
+		}
+	}
 }

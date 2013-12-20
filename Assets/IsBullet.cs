@@ -5,10 +5,14 @@ public class IsBullet : MonoBehaviour {
 
 	public float speed = 20.0f;
 
+	public bool useRateOfFire = true;
+	public float rateOfFire = 0.5f;
+
 	public float lifetime = 30.0f;
 
 	private float birthTime;
 	private float deathTime;
+
 
 
 	// Use this for initialization
